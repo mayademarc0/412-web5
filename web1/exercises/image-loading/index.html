@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Loading</title>
+    <!-- <link rel="stylessheet" href="css/style.css"> -->
+    <style>
+        html,
+        body {
+        padding: 0px;
+        margin: 0px;
+        }
+        h1 {
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        img {
+        display: block;
+        width: 100px;
+        }
+        #tilted {
+    transform: rotate(123deg);
+    border: 13px greenyellow dashed;
+}
+
+        .shadow {
+  box-shadow: 45px 47px 51px 0px rgba(69, 69, 69, 0.43);
+}
+        .stripe {
+  border: 20px solid white;
+  border-bottom-width: 110px;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Image Loading Exercise</h1>
+    <img class="shadow stripe" src="img/paintinggirl.jpg" alt="The Painter">
+    <img class="shadow" id="tilted" src="img/facepainted.jpg" alt="The Face">
+    <img class="stripe" src="img/rivershoes..jpg" alt="The Shoes">
+</body>
+</html>

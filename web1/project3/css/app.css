@@ -1,0 +1,91 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  /*background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(0, 0, 0, 1) 40%
+  );*/
+  padding: 5px;
+  box-sizing: border-box;
+  height: 100%;
+  overflow: hidden;
+}
+
+#wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 5vw;
+  grid-row-gap: 5vh;
+}
+.pad {
+  background-color: yellow;
+  height: 20vh;
+  border: 1px solid rgb(69, 69, 69);
+  border-radius: 7px;
+  box-shadow: -7px 8px 155px 0px rgba(255, 255, 255, 0.88);
+}
+.pad:hover {
+  border: 3px solid white;
+  opacity: 0.75;
+}
+.pad:active,
+.pad:focus {
+  border: 3px solid greenyellow;
+  background-color: white;
+  box-shadow: -7px 8px 155px 10px rgba(255, 255, 255, 0.88);
+}
+.pad.a {
+  background-color: #f22987;
+}
+.pad.b {
+  background-color: #1ac6d9;
+}
+.pad.c {
+  background-color: #dcf230;
+}
+.pad.d {
+  background-color: #f2d027;
+}
+.pad.e {
+  background-color: #f27141;
+}
+.pad.f {
+  background-color: #f22987;
+}
+.pad.g {
+  background-color: #1ac6d9;
+}
+.pad.h {
+  background-color: #dcf230;
+}
+.pad.i {
+  background-color: #f2d027;
+}
+.pad.j {
+  background-color: #f27141;
+}
+.pad.k {
+  background-color: #f22987;
+}
+.pad.l {
+  background-color: #1ac6d9;
+}
+.pad.m {
+  background-color: #dcf230;
+}
+.pad.n {
+  background-color: #f2d027;
+}
+.pad.o {
+  background-color: #f27141;
+}
+.pad.p {
+  background-color: #f22987;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DEMO 2 - queryselector & classlist</title>
+    <style>
+    .circle{
+        width:250px;
+        height:250px;
+        background: green;
+        border-radius:125px;
+        transition: all 0.5s ease-in ;
+    }
+    .move{
+        transform:translate(300px);
+    }
+        </style>
+</head>
+<body>
+    <h1>JS Demo 2</h1>
+    <div class="circle"></div>
+    <script>
+        let myCircle = document.querySelector(".circle");
+
+        function changeColor() {
+         myCircle.style.backgroundColor = "blue";
+        }
+        myCircle.addEventListener("mouseover", changeColor);
+
+        function changeColorBack() {
+                myCircle.style.backgroundColor = "green";
+            }
+            myCircle.addEventListener("mouseout", changeColorBack);
+
+        function animateMe() {
+            if(myCircle.classList.contains("move")) {
+               myCircle.classList.remove("move");
+            }else{
+            myCircle.classList.add("move");
+            }
+        }
+            myCircle.addEventListener("click", animateMe);
+    </script>
+</body>
+</html>

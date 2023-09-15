@@ -1,0 +1,31 @@
+html,
+body {
+  padding: 0px;
+  margin: 0px;
+}
+html {
+  cursor: url("https://badhtml.com/img/cursor.gif"), pointer;
+}
+body {
+  background-color: lavender;
+}
+h1 {
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+img {
+  display: block;
+  width: 100px;
+}
+#tilted {
+  transform: rotate3d(23deg);
+  border: 13px greenyellow dashed;
+}
+
+.shadow {
+  box-shadow: 45px 47px 51px 0px rgba(69, 69, 69, 0.43);
+}
+.stripe {
+  border: 20px solid white;
+  border-bottom-width: 110px;
+}

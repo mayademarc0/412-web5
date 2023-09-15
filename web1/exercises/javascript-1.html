@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            white-space: pre;
+        }
+        #box{
+            width: 250px;
+            height: 250px;
+            background-color:lightpink;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript 1 - Demo</h1>
+    <div id="box"></div>
+
+    <script>
+        alert("Hello World!");
+        console.log("Hi there :)");
+        confirm("REALLY load this page?");
+        prompt("How many apples?");
+        document.write("Hi there");
+        document.writeln("Line 1");
+        document.writeln("Line 2");
+        
+        var myBox = document.getElementById("box");
+        myBox.addEventListener("click", function() {
+            console.log("You clicked!");
+            myBox.style.backgroundColor = "red";
+        });
+
+        myBox.addEventListener("dblclick", function() {
+            console.log("You double clicked!");
+            myBox.style.backgroundColor = "orange";
+        });
+
+    </script>
+
+</body>
+</html>

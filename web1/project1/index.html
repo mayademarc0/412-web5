@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Photo Gallery</title>
+    <style>
+        body{
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color:lightslategray;
+            background-color:rgb(245, 235, 181)
+
+        }
+        #container{
+            display: grid; 
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            /* grid-template-rows: 100px 300px; */
+            grid-row-gap: 50px;
+        }
+        .boxes{
+            background-color:rgb(238, 223, 138);
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+            box-shadow: 45px 47px 51px 0px rgba(69, 69, 69, 0.43);
+        }
+        @media only screen and (max-width: 1024px) {
+        #container{
+            grid-template-columns: 1fr 1fr;  
+            }    
+        }
+        @media only screen and (max-width: 622px) {
+        #container{
+            grid-template-columns: 1fr;  
+            }    
+        }
+
+
+        .boxes.a{
+            background-image: url(img/vsco61114c8369b43.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .boxes.b{
+            background-image: url(img/vsco61115bc81ce79.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .boxes.c{
+            background-image: url(img/vsco6111652a3f95c.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .boxes.d{
+            background-image: url(img/vsco6111672c69c80.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .boxes.e{
+            background-image: url(img/vsco611160f8600c6.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .boxes.f{
+            background-image: url(img/vsco6111642b97edc.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .boxes.g{
+            background-image: url(img/vsco611152eaf3193.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .boxes.h{
+            background-image: url(img/vsco611150e54b6fb.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .boxes.i{
+            background-image: url(img/vsco6111673eae4b3.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .boxes.j{
+            background-image: url(img/vsco6111641e88657.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .boxes.k{
+            background-image: url(img/vsco6111485d2b9a9.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .boxes.l{
+            background-image: url(img/vsco6111656473c2c.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .boxes span{
+        color:rgb(69, 69, 69);
+        background-color: rgb(255 252 252 / 48%);
+        width: 100%;
+        display: block;
+        font-size: 22px;
+        height: 30px;
+        text-align: center;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        padding-top: 3px;
+        }
+        .boxes:hover{
+            transform:scale(1.2);
+            
+        }
+
+
+        a:hover{
+            color:lightslategray;
+
+        }
+        a{
+            color: black;
+        }
+        #container{
+            margin-bottom: 70px
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Maya's Summer 21 Gallery</h1>
+    <p>Welcome to this awesome collection of all things that made my summer 2021 amazing &#127749. Hope you have fun with this little sneak peak into what made me happy &#127774!</p>
+    <pr>Drag your mouse over the images to explore &#127804.</p>
+    <div id="container">
+
+    <div class="boxes a"><span>The dawn</span></div>
+    <div class="boxes b"><span>The prom</span></div>
+    <div class="boxes c"><span>The port</span></div>
+    <div class="boxes d"><span>The festival</span></div>
+    <div class="boxes e"><span>The glow in the dark</span></div>
+    <div class="boxes f"><span>The little town</span></div>
+    <div class="boxes g"><span>The graduates</span></div>
+    <div class="boxes h"><span>The sunset</span></div>
+    <div class="boxes i"><span>The city</span></div>
+    <div class="boxes j"><span>The quote</span></div>
+    <div class="boxes k"><span>The sign</span></div>
+    <div class="boxes l"><span>The night</span></div>
+
+
+    </div>
+    <br>
+    <a href="https://vsco.co/mayademarcoo/gallery" target="_blank">Link to my VSCO to eplore more of my summer!</a> 
+    <a href="https://www.instagram.com/mayademarcoo/?hl=en" target="_blank">Link to my Instagram to see more!</a>
+    <a href="https://youtu.be/zZtW_z8SW20" target="_blank">Link to one of my favourite summer songs on Youtube!</a>
+    <br>
+    <br>
+    <a href="../index.html">BACK to WEB1 HOME</a>
+</body>
+</html>
