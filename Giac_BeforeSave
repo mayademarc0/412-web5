@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template Client</title>
+    <link rel="stylesheet" href="css/client.css" />
+  </head>
+  <body>
+    <header>
+       <nav class="top-nav">
+        <div class="logo">
+          <a href= "../index.html"><img src="img/" alt="logo" /></a>
+        </div>
+        <a href="../index.html">
+          <ul class="top-nav-links">
+          <li><a href="#about">Our Story</a></li>
+          <li><a href="#info">Visit Us</a></li>
+          <li><a href="#featured">Featured In</a></li>
+          <li><a href="#pictures">Pictures</a></li>
+          <!-- <li><a href="#contact">Contact Us</a></li> -->
+          <li><a href="#lang">FR</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+       <section class="landing">
+      <img
+        src="img/Screen Shot 2023-11-05 at 12.52.13 PM.png"
+        alt=""
+      />
+      <h2>Montreal's most trusted and stylish barber since 1961s</h2>
+       </section>
+      <section class="story">
+        <div id="story-img">
+        <img src="https://placehold.co/510x430" alt="" />
+        </div>
+        <div id="story-text">
+        <h1>Our Story</h1>
+        <p>
+          Salon Giacomo Lui et Elle has been a staple in Montréal-North, on Fleury, since the 1960’s. Our owner and head barber, Giacomo Delle Donne, immigrated as a teenager from Italy to Montreal and opened his own shop in 1961. For generations, clients have sat in his vintage orange barber chairs and shared countless stories. For years, Giacomo’s has been a place for the community to come together to relax, chat, and have fun over a shot of espresso.
+        </p>
+        </div>
+      </section>
+      <section class="visit-us">
+      <div class="location">
+        <h1>Where are we?</h1>
+        <h2>3496 Rue Fleury E, Montréal-Nord, Quebec H1H 2R9</h2>
+      </div>
+      <div class="hours">
+        <h1>Opening Hours</h1>
+        <h2>Come visit us!</h2>
+        <ul>
+          <li>Monday: 8 a.m.–6 p.m.</li>
+          <li>Tuesday: 8 a.m.–6 p.m.</li>
+          <li>Wednesday: 8 a.m.–6 p.m.</li>
+          <li>Thursday: 8 a.m.–8 p.m.</li>
+          <li>Friday: 8 a.m.–8 p.m.</li>
+          <li>Saturday: 8 a.m.–5 p.m.</li>
+          <li>Sunday: Closed</li>
+        </ul>
+      </div>
+      </section>
+      <section class="featured">
+        <h1>
+          Featured In
+        </h1>
+        <div class="grid-container">
+          <img src="https://placehold.co/300" alt="" />
+          <img src="https://placehold.co/300" alt="" />
+          <img src="https://placehold.co/300" alt="" />
+          <img src="https://placehold.co/300" alt="" />
+        </div>
+      </section>
+      <!--<section>
+        <h1>Check us out - Possible picture grid</h1>
+        <div class="grid-container">
+          <img src="https://placehold.co/300" alt="" />
+          <img src="https://placehold.co/300" alt="" />
+          <img src="https://placehold.co/300" alt="" />
+          <img src="https://placehold.co/300" alt="" />
+          <img src="https://placehold.co/300" alt="" />
+          <img src="https://placehold.co/300" alt="" />
+          <img src="https://placehold.co/300" alt="" />
+          <img src="https://placehold.co/300" alt="" />
+        </div>
+      </section>-->
+      <footer class="bttm-footer">
+      <section class="bttm-footer-text">
+        <div>
+          <!-- <p>Call or Visit Us!</p> -->
+        </div>
+        <div class="bttm-footer-contact">
+            <div class="sm-links">
+              <h3><a href="#">Facebook</a></h3>
+              <h3><a href="#">Instagram</a></h3>
+            </div>
+        </div>    
+      </section>
+        <section>&copy; Salon Giacomo Lui et Elle 2023</section>
+      </footer>
+    </main>
+  </body>
+</html>
