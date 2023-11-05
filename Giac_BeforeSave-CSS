@@ -1,0 +1,121 @@
+/*MAIN*/
+main ul{
+    list-style: none;
+
+}
+
+body {
+    margin: 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    text-decoration: underline;
+}
+
+.landing img {
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin: 0 auto;
+    width:100%;
+}
+
+/*NAVIGATION*/
+.top-nav {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: white;
+    padding: 0 15px;
+}
+
+.logo {
+    width: 32px;
+    height: 32px;
+}
+
+.top-nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.top-nav-links li {
+    margin-left: 20px;
+}
+
+.top-nav-links a {
+    font-size: 18px;
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: none;
+    color: #212121;
+}
+
+.top-nav-links a:hover {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #212121;
+}
+
+/*LANDING*/
+
+/*STORY*/
+.story{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/*CONTACT INFO*/
+
+.visit-us{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+/*FOOTER*/
+.bttm-footer {
+    padding: 8em 1.2em 2.5em 1.2em;
+    background-color: #0D0D0D;
+    color: #fff;
+    /*margin-top: -1em;*/
+}
+
+#bttm-footer {
+    display: block;
+}
+
+.bttm-footer-contact {
+    display: block;
+}
+
+.sm-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 12em;
+    padding: 5em 0 0;
+}
+
+#email {
+    font-size: 12px;
+    margin-top: 2em;
+    margin-bottom: 4em;
+}
+
+.sm-links a {
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 1px solid;
+    padding-bottom: 5px;
+    font-size: 0.5em;
+}
+
+.bttm-footer-text p {
+    font-size: 4em;
+    line-height: 1.5em;
+}
