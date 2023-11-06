@@ -1,0 +1,218 @@
+/*MAIN*?*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+main ul{
+    list-style: none;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    text-decoration: none;
+    font-family: 'Lobster', sans-serif;
+}
+
+h2{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+}
+
+p {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+}
+
+li{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+}
+
+ul {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+}
+
+a{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+}
+
+/*NAVIGATION*/
+.top-nav {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: white;
+    padding: 0 15px;
+}
+
+.logo {
+    width: 32px;
+    height: 32px;
+}
+
+.top-nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.top-nav-links li {
+    margin-left: 20px;
+}
+
+.top-nav-links a {
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    color: #212121;
+}
+
+.top-nav-links a:hover {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #212121;
+}
+
+/*LANDING*/
+
+/*.landing img {
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin: 0 auto;
+    width: 100%;
+}*/
+
+.cover-img {
+    /* THIS IS WHERE YOU PUT YOUR BACKGROUND IMAGE */
+    background-image: url("../img/cropped4grad.png");
+    background-size: cover;
+    /* CHANGE THIS VALUE ACCORDING TO THE HEIGHT OF YOUR LANDING PAGE (THINK OF VH [VIEWPORT HEIGHT] AS THE % OF HEIGHT THAT IT TAKES ON SCREEN */
+    height: 96vh;
+    max-width: 100%;
+    /* THIS CHANGES THE BRIGHTNESS OF UR IMAGE (THE LOWER THE VALUE, THE DARKER THE IMAGE WILL GET */
+    filter: brightness(50%);
+}
+
+.cover h1 {
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 110px;
+    position: absolute;
+    top: 55%;
+    left: 5%;
+    /* transform: translate(-120%, -70%); */
+    text-align: left;
+    opacity: 0.95;
+    text-shadow: 2px 4px 20px rgba(0, 0, 0, 0.909);
+}
+
+/* AFFECTS TOP LINE*/
+
+#welcome {
+    font-weight: 200;
+    font-size: 52pt;
+}
+
+#welcome-cont {
+    font-weight: 200;
+    font-size: 52pt;
+    display: block;
+    margin-top: -35px;
+}
+
+/* AFFECTS BOTTOM LINE*/
+#welcome-cont2 {
+    font-size: 92pt;
+    font-weight: 900;
+    display: block;
+    margin-top: -20px;
+}
+
+/*STORY*/
+.story{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 3rem 5rem 3rem 5rem;
+    column-gap: 4em;
+}
+
+#story-text p {
+    text-align: left;
+}
+
+#story-text h1 {
+    text-align: left;
+}
+
+/*CONTACT INFO*/
+
+.visit-us{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4em;
+}
+
+li{
+    text-align: left;
+}
+
+.visit-us h1{
+    text-align: left;
+}
+
+
+/*FOOTER*/
+.bttm-footer {
+    padding: 8em 1.2em 2.5em 1.2em;
+    background-color: #0D0D0D;
+    color: #fff;
+    /*margin-top: -1em;*/
+}
+
+#bttm-footer {
+    display: block;
+}
+
+.bttm-footer-contact {
+    display: block;
+}
+
+.sm-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 12em;
+    padding: 5em 0 0;
+}
+
+#email {
+    font-size: 12px;
+    margin-top: 2em;
+    margin-bottom: 4em;
+}
+
+.sm-links a {
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 1px solid;
+    padding-bottom: 5px;
+    font-size: 0.5em;
+}
+
+.bttm-footer-text p {
+    font-size: 4em;
+    line-height: 1.5em;
+}
