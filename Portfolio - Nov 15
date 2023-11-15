@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Template Demo</title>
+  <link rel="stylesheet" href="css/portfolio.css" />
+  <link rel="stylesheet" href="https://use.typekit.net/faw1rcx.css">
+</head>
+
+<body>
+  <header>
+    <nav class="top-nav">
+      <div class="logo">
+        <a href="../index.html"><img src="img/" alt="logo" /></a>
+      </div>
+      <a href="../index.html">
+        <ul class="top-nav-links">
+          <li><a href="#about">about</a></li>
+          <li><a href="#work">work</a></li>
+          <li><a href="#footer">contact</a></li>
+        </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="landing">
+      <h1>Hi I'm Maya,</h1>
+      <h1> Nice to meet you!</h1>
+      <section class="landing-flowers">
+        <img id="red-flower" src="img/red-flower.svg" alt="logo" /></a>
+        <img id="blue-flower" src="img/blue-flower.svg" alt="logo" /></a>
+        <img id="green-flower" src="img/green-flower.svg" alt="logo" /></a>
+        <!---<h2>Let's Grow and Flourish Together!</h2>-->
+      </section>
+    </section>
+
+    <section div id="tagline">
+      <h2>
+      <span class="large-text-anim-on-scroll">Let's Grow</span>
+      <span class="large-text-anim-on-scroll">and Flourish</span>
+      <span class="large-text-anim-on-scroll">Together!</span>
+      </h2>
+      <!-- Diff Spans For Anim -->
+    </section>
+
+
+    <!--VERSION WITH TEXT BEFORE<section class="abt">
+      </section>-->
+    <section class="abt-content">
+      <div class="pic-me">
+        <img id="pic-me-img" src="https://placehold.co/430" alt="" />
+      </div>
+      <div class="text-me">
+        <h2>Hi there!</h2> 
+        <h2>I'm Maya De Marco.</h2>
+        <p>
+          I am a Montreal based graphic and web designer. I am currently a third year student at Vanier College enrolled
+          in Micromedia who is always looking to learn, collaborate, and share with passionate individuals just like me.
+          I aspire to help those I work with bring the love for their ideas to life.
+        </p>
+        <p>
+          I mostly enjoy working with branding, layout, illustration, and typography, however, I am capable of adapting
+          to your needs to make your most creative and innovative ideas blossom. My design style is mostly clean,
+          effective, organized, and serious but I will never pass up the opportunity to add a pop of colour and
+          playfulness to my work. I strongly believe that conceptualization, intention, and meaning are at the heart of
+          good design.
+        </p>
+        <h2>Skills</h2>
+        <ul>
+          <li>Id</li>
+          <li>Ps</li>
+          <li>Ai</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JS</li>
+        </ul>
+      </div>
+    </section>
+
+
+    <section class="selected-work">
+      <h2>Selected Work</h2>
+      <section class="grid-container">
+        <div class="grid-item">
+          <div class="item-project">
+
+            <h3>Alphagetti Pasta</h3>
+            <h2>Redesign</h2>
+            <p>( 2022 )</p>
+
+            <div class="overlay">
+              <img src="./img/alphagetti-mockup-poster-noback.png" alt="">
+              <a href="test.html">GO TO PROJECT</a>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="item-project">
+
+            <h3>Don't Let it Tear You Down</h3>
+            <h2>PSA Campaign</h2>
+            <p>( 2023 )</p>
+
+            <div class="overlay">
+              <img src="./img/billboard-landscape.png" alt="">
+              <a href="test.html">GO TO PROJECT</a>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="item-project">
+
+            <h3>Flower Power</h3>
+            <h2>Game</h2>
+            <p>( 2022 )</p>
+
+            <div class="overlay">
+              <img src="./img/facebook-post.png" alt="">
+              <a href="test.html">GO TO PROJECT</a>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="item-project">
+
+            <h3>Salon Giacomo Lui et Elle</h3>
+            <h2>Case Study</h2>
+            <p>( 2023 )</p>
+
+            <div class="overlay">
+              <img src="./img/giacpatch.png" alt="">
+              <a href="test.html">GO TO PROJECT</a>
+            </div>
+          </div>
+        </div>
+
+
+      </section>
+    </section>
+  </main>
+
+  <footer class="bttm-footer">
+    <section class="bttm-footer-text">
+      <div>
+        <p>Ready to grow?</p>
+        <p>Get in Touch!</p>
+      </div>
+      <div class="bttm-footer-contact">
+        <div class="sm-links">
+          <h3><a href="#">Linkedin</a></h3>
+          <h3><a href="#">Behance</a></h3>
+          <h3><a href="#">Instagram</a></h3>
+        </div>
+        <h3 id="email">themayademarco@gmail.com</h3>
+        <h3> Based in Montreal, Quebec</h3>
+      </div>
+    </section>
+    <section>&copy; Maya 2023</section>
+  </footer>
+</body>
+
+</html>
