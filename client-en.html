@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Template Client</title>
+    <title>Salon Giacomo Lui et Elle - Official</title>
     <link rel="stylesheet" href="css/client.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
@@ -13,24 +13,33 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+      <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+      <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  </head>
+  <link rel="stylesheet" target=_blank
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
   </head>
   <body>
+    <div class="container">
     <header>
       <nav class="top-nav">
         <div class="logo">
-          <a href=""><img class="logo" src="LOGO IMAGE HERE" alt="" /></a>
+          <a href=""><img class="logo" src="img/logo-var_giac-rec-01.png" alt="" /></a>
         </div>
+        <input type="checkbox" id="click" />
+        <label for="click" class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </label>
         <ul class="top-nav-links">
-          <li><a href="#about">Our Story</a></li>
-          <li><a href="#info">Visit Us</a></li>
-          <li><a href="#featured">Featured In</a></li>
-          <li><a href="#pictures">Pictures</a></li>
+          <li id="red-li"><a href="#about">Our Story</a></li>
+          <li id="blue-li"><a href="#info" style="color:#046ab3;">Visit Us</a></li>
+          <li id="red-li"><a href="#testis">Testimonials</a></li>
+          <li id="blue-li"><a href="#featured" style="color:#046ab3;">Featured In</a></li>
           <!-- <li><a href="#contact">Contact Us</a></li> -->
-          <li><a href="#lang">FR</a></li>
+          <li><a href="./client-fr.html">FR</a></li>
         </ul>
       </nav>
     </header>
-
     <main>
       <section class="cover">
         <div class="cover-img"><span></span></div>
@@ -44,39 +53,71 @@
       <!---<section class="landing">
         <img src="img/cropped2.png" alt="" />
       </section>-->
+      <section id="about"></section>
       <section class="story">
         <div id="story-img">
-          <img src="https://placehold.co/510x430" alt="" />
+          <img src="img/giacpatch.png" alt="" />
         </div>
         <div id="story-text">
           <h1>Our Story</h1>
           <p>
-            Salon Giacomo Lui et Elle has been a staple in Montréal-North, on
-            Fleury, since the 1960’s. Our owner and head barber, Giacomo Delle
-            Donne, immigrated as a teenager from Italy to Montreal and opened
-            his own shop in 1961. For generations, clients have sat in his
-            vintage orange barber chairs and shared countless stories. For
-            years, Giacomo’s has been a place for the community to come together
-            to relax, chat, and have fun over a shot of espresso.
+            Salon Giacomo Lui et Elle has been a staple in Montreal-North, on Fleury, since the 1960’s. Our owner and head barber, Giacomo Delle Donne, immigrated as a teenager from Italy to Montreal and opened his own shop in 1961. For generations, clients have sat in his vintage orange barber chairs and shared countless stories. For years, Giacomo’s has been a place for the community to come together, relax, chat, and have fun over a shot of espresso.
           </p>
           <p>
-            As soon as you walk into our shop, you will see pictures on the
-            mirrors of all the sastified clients and Giacomo's lovely family. At
-            83, Giacomo is still passionate about cutting hair and making every
-            one of his clients smil. Every morning he wakes up ready to exercise
-            his people skills and his expertise in hair styling. Come grab a
-            seat and enjoy the atmoshpere!
+            As soon as you walk into our shop, you will see pictures on the mirrors of all the satisfied clients throughout the years as well as Giacomo’s family. At 83, Giacomo is still passionate about cutting hair and making every one of his clients smile with their new hairstyle. With Giacomo’s great people skills and his expertise in hair styling, you’ll immediately feel welcomed. 
           </p>
         </div>
       </section>
+      <section id="info"></section>
       <section class="visit-us">
-        <div class="location">
-          <h1>Where are we?</h1>
-          <h2>3496 Rue Fleury E, Montréal-Nord, Quebec H1H 2R9</h2>
+        <div id="meet-giac">
+          <img id="pole" src="img/polepatch.png">
+          <h2>
+            Come <span id="meet-giac"> meet Giacomo</span>
+            <br/>
+            for a <span id="barber">true barber</span> experience. 
+            <br/>
+            Grab a seat, and 
+            <!-- <br/> -->
+            <span id="enjoy">enjoy</span> the atmosphere!
+          </h2>
+          <img id="stach" src="img/stashpach.png">
+           <!-- <h2>
+            Come meet Giacomo <br/> for a true barber experience. <br/>Grab a seat, and <br/> enjoy the atmosphere!
+          </h2> -->
         </div>
-        <div class="hours">
+        <section class="map-loc">
+        <div id="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11169.83295266977!2d-73.6404494!3d45.5813322!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91f4084c3c447%3A0x4a2f4d06b8bb70e5!2sGiacomo%20Coiffure%20Elle%20%26%20Lui!5e0!3m2!1sen!2sca!4v1699630759785!5m2!1sen!2sca"
+            width="90%" height="550" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div id="info">
+        <p>Call Us Now:<a href="tel:5143216053"></a> 514-321-6053</p>
+        <br>
+        <p>3496 Rue Fleury E, Montréal-Nord,</p>
+        <p>Quebec H1H 2R9</p>
+        </div>
+        </section>
+        <!-- <section class="location">
+          <div id="adress">
+            <p>Call Us Now | 514-321-6053</p>
+            <p>3496 Rue Fleury E, Montréal-Nord, Quebec H1H 2R9</p> -->
+
+          <!-- <h1>Where are we?</h1> -->
+          <!-- <h3>3496 Rue Fleury E, Montréal-Nord, Quebec H1H 2R9</h3> -->
+          <!-- <h1>Contact</h1>
+          <h3>Visit Us:</h3>
+          <p>3496 Rue Fleury E, Montréal-Nord,<br/> Quebec H1H 2R9</p>
+          <h3>Call Us:</h3>
+          <p>(514) 321-6053</p> -->
+           <!-- <img src="img/stashpach.png" alt="" />
+          </div>
+        </section> -->
+        <!-- <section class="hours">
+        <div id="hours">
           <h1>Opening Hours</h1>
-          <!-- <h2>Come visit us!</h2> -->
           <ul>
             <li>Monday: 8 a.m.–6 p.m.</li>
             <li>Tuesday: 8 a.m.–6 p.m.</li>
@@ -87,21 +128,56 @@
             <li>Sunday: Closed</li>
           </ul>
         </div>
-      </section>
-      <section class="temoins">
-        <h1>Client Stories</h1>
-        <p>
-          i remember goinf there as a kid with my dad, and Giacomo aleasys had a
-          bowl of lollipops ready at the cash for anybody who walked in...
-        </p>
-      </section>
+        <div id="razor-patch">
+          <img src="img/razorpatch.png" alt="" />
+        </div>
+      </section> -->
+      <section id="featured"></section>
       <section class="featured">
         <h1>Featured In</h1>
         <div class="grid-container">
+          <!-- <div><img src="img/logo-metro.png" alt="" /></div>
+          <div><img src="img/insieme good quality.jpeg" alt="" /></div>
+          <div><img src="img/fb-logo.png" alt="" /></div>
           <img src="https://placehold.co/300" alt="" />
-          <img src="https://placehold.co/300" alt="" />
-          <img src="https://placehold.co/300" alt="" />
-          <img src="https://placehold.co/300" alt="" />
+          <img src="https://placehold.co/300" alt="" /> -->
+        <div class="card">
+          <img src="img/insieme-crop.png" alt="Insieme Montreal">
+          <div class="container">
+            <h4><b>Insieme Montreal</b></h4>
+            <p>Check out these videos of Giacomo and his salon made by Insieme Montreal: </p>
+            <p><a href="https://www.instagram.com/reel/CsE6WYdpGNg/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA%3D%3D" target="_blank">2023 Update</a></p>
+            <p><a href="https://www.instagram.com/reel/Ck3aZkmv2Gu/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA%3D%3D" target="_blank">2021 Update</a></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/pr-pic.png" alt="Paule Robitaille">
+          <div class="container">
+            <h4><b>Paule Robitaille</b></h4>
+            <p>Check out Paule Robitaille paying tribute to Giacomo Delle Donne, for his salon's 60th anniversary:</p>
+            <p><a href="https://www.instagram.com/p/CMP9vJhnowx/?utm_source=ig_web_copy_link" target="_blank">60th Anniversary TV Tribute</a></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/metro-screen.png" alt="Journal Metro">
+          <div class="container">
+            <h4><b>Journal Métro</b></h4>
+            <p>Check out Journal Métro's article that speaks about the culture and community surrounding the salon:</p>
+            <p><a href="https://journalmetro.com/local/montreal-nord/2623616/giacomo-un-barbier-indemodable-depuis-60-ans/" target="_blank">Giacomo: un barbier indémodable depuis 60 ans</a></p>
+          </div>
+        </div>
+      </div>
+      </section>
+      <section id="testis"></section>
+      <section class="testis">
+        <h1>Testimonials</h1>
+        <div class="main-carousel">
+          <div class="carousel-cell"><img src="img/1.png" alt=""></div>
+          <div class="carousel-cell"><img src="img/2.png" alt=""></div>
+          <div class="carousel-cell"><img src="img/3.png" alt=""></div>
+          <div class="carousel-cell"><img src="img/4.png" alt=""></div>
+          <div class="carousel-cell"><img src="img/5.png" alt=""></div>
+          <div class="carousel-cell"><img src="img/6.png" alt=""></div>
         </div>
       </section>
       <!--<section>
@@ -120,17 +196,52 @@
       <footer class="bttm-footer">
         <section class="bttm-footer-text">
           <div>
-            <!-- <p>Call or Visit Us!</p> -->
+            <p>Check us out!</p>
           </div>
           <div class="bttm-footer-contact">
             <div class="sm-links">
-              <h3><a href="#">Facebook</a></h3>
-              <h3><a href="#">Instagram</a></h3>
+              <h3><a
+                  href="https://www.google.com/search?client=safari&rls=en&q=giacomo+lui+et+elle&ie=UTF-8&oe=UTF-8#lrd=0x4cc91f4084c3c447:0x4a2f4d06b8bb70e5,1,,,,"
+                  target="_blank">Reviews</a></h3>
+              <h3><a href="https://www.instagram.com/giacomocoiffure/" target="_blank">Instagram</a></h3>
+              <h3><a href="https://www.facebook.com/SalonGiacomo/" target="_blank">Facebook</a></h3>
             </div>
+          <div class="info-foot">
+            <!-- <h3 id="phone">Book Now: 514-321-6053</h3> -->
+            <h3 id="hours"> Opening hours</h3>
+            <ul>
+              <li>Monday: 8 a.m.–6 p.m.</li>
+              <li>Tuesday: 8 a.m.–6 p.m.</li>
+              <li>Wednesday: 8 a.m.–6 p.m.</li>
+              <li>Thursday: 8 a.m.–8 p.m.</li>
+              <li>Friday: 8 a.m.–8 p.m.</li>
+              <li>Saturday: 8 a.m.–5 p.m.</li>
+              <li>Sunday: Closed</li>
+            </ul>
+          </div>
           </div>
         </section>
-        <section>&copy; Salon Giacomo Lui et Elle 2023</section>
+        <!-- <h3 id="phone">Book Now: 514-321-6053</h3> -->
+        <section class="copy">&copy; Salon Giacomo Elle et Lui 2023</section>
       </footer>
     </main>
+    </div>
+
+    <script>
+        var elem = document.querySelector('.main-carousel');
+        var flkty = new Flickity(elem, {
+            // options
+            cellAlign: 'left',
+            contain: true,
+            wrapAround: true,
+        });
+
+        // element argument can be a selector string
+        //   for an individual element
+        var flkty = new Flickity('.main-carousel', {
+            // options
+        });
+    </script>
+
   </body>
 </html>
