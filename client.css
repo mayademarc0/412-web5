@@ -53,6 +53,23 @@ header {
   z-index: 10;
 }
 
+/*ANIM ON LOAD*/
+
+.container {
+  animation: transitionIn 0.75s;
+}
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX (-10deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: rotateX (0);
+  }
+}
+
 /*NAVIGATION*/
 .top-nav {
   height: 115px;
@@ -183,7 +200,7 @@ header {
 
 #story-text h1 {
   text-align: left;
-  /* color: #b91625; */
+  color: #046ab3;
 }
 
 /*STORY*/
@@ -346,6 +363,7 @@ li {
   font-family: "Lobster", sans-serif;
   padding-bottom: 0.4em;
   padding-left: 0.7em;
+  color: #b91625;
 }
 
 .carousel-cell img {
@@ -408,6 +426,7 @@ a {
   font-family: "Lobster", sans-serif;
   padding-bottom: 0.4em;
   padding-left: 0.7em;
+  color: #046ab3;
 }
 
 .featured {
@@ -529,6 +548,39 @@ li {
   line-height: 1.5em;
 }
 
+#week {
+  padding-right: 3em;
+}
+
+#week-2 {
+  padding-right: 2.8em;
+}
+
+#week-3 {
+  padding-right: 1.4em;
+}
+
+#week-4 {
+  padding-right: 2.35em;
+}
+
+#week-5 {
+  padding-right: 3.8em;
+}
+
+#week-6 {
+  padding-right: 2.5em;
+}
+
+#week-7 {
+  padding-right: 3.15em;
+}
+
+#times {
+  /* text-align: left; */
+  padding-left: 0.5em;
+}
+
 /*HAM NAV*/
 .top-nav .menu-btn i {
   color: #0d0d0d;
@@ -539,6 +591,62 @@ li {
 
 input[type="checkbox"] {
   display: none;
+}
+
+/*HOVERS*/
+.story img:hover {
+  transform: rotate(-10deg);
+  cursor: pointer;
+}
+
+#story-text h1:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.featured h1:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.testis h1:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#pole {
+  transform: rotate(10deg);
+  cursor: pointer;
+}
+
+#pole:hover {
+  transform: rotate(20deg);
+  cursor: pointer;
+}
+
+#stach {
+  transform: rotate(-10deg);
+  cursor: pointer;
+}
+
+#stach:hover {
+  transform: rotate(-20deg);
+  cursor: pointer;
+}
+
+.sm-links a:hover {
+  text-decoration: none;
+  color: #fff;
+  border-bottom: 3px solid;
+  padding-bottom: 5px;
+  font-size: 0.8em;
+  font-weight: 500;
+}
+
+a:hover {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  color: #046ab3;
 }
 
 @media (max-width: 940px) {
@@ -620,10 +728,16 @@ input[type="checkbox"] {
     width: 700px;
   }
 
-  #story-text p {
+  /* #story-text p {
     text-align: left;
     padding: 1em 2.5em;
     font-size: 1.25em;
+  } */
+
+  #story-text p {
+    text-align: left;
+    padding: 1em 2em;
+    font-size: 1em;
   }
 
   #pole {

@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Salon Giacomo Elle et Lui - Site Officielle</title>
+    <link rel="icon" type="image/x-icon" href="../web5/img/giacpatch.png">
     <link rel="stylesheet" href="css/client-fr.css" />
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" />
     <link
@@ -29,12 +30,12 @@
                     <i class="fas fa-bars"></i>
                 </label>
                 <ul class="top-nav-links">
-                    <li id="red-li"><a href="#about">Notre Histoire</a></li>
-                    <li id="blue-li"><a href="#info" style="color:#046ab3;">Visitez-Nous</a></li>
-                    <li id="red-li"><a href="#testis">Témoignages</a></li>
+                    <li id="blue-li"><a href="#about" style="color:#046ab3;">Notre Histoire</a></li>
+                    <li id="red-li"><a href="#info">Visitez-Nous</a></li>
                     <li id="blue-li"><a href="#featured" style="color:#046ab3;">En Vedette</a></li>
+                    <li id="red-li"><a href="#testis">Témoignages</a></li>
                     <!-- <li><a href="#contact">Contact Us</a></li> -->
-                    <li><a href="./client-en.html">EN</a></li>
+                    <li><a href="./client-en.html" style="color:#046ab3;">EN</a></li>
                 </ul>
             </nav>
         </header>
@@ -151,7 +152,7 @@
                     <img src="img/insieme-crop.png" alt="Insieme Montreal">
                     <div class="container">
                         <h4><b>Insieme Montreal</b></h4>
-                        p>Regardez ces vidéos de Giacomo et de son salon réalisées par Insieme Montreal : </p>
+                        <p>Regardez ces vidéos de Giacomo et de son salon réalisées par Insieme Montreal : </p>
                         <p><a href="https://www.instagram.com/reel/CsE6WYdpGNg/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA%3D%3D" target="_blank">Visite 2023</a></p>
                         <p><a href="https://www.instagram.com/reel/Ck3aZkmv2Gu/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA%3D%3D" target="_blank">Visite 2021</a></p>
                     </div>
@@ -218,13 +219,13 @@
                         <!-- <h3 id="phone">Book Now: 514-321-6053</h3> -->
                         <h3 id="hours"> Heures d'ouverture</h3>
                         <ul>
-                            <li>Lundi: 8 a.m.–6 p.m.</li>
-                            <li>Mardi: 8 a.m.–6 p.m.</li>
-                            <li>Mercredi: 8 a.m.–6 p.m.</li>
-                            <li>Jeudi: 8 a.m.–8 p.m.</li>
-                            <li>Vendredi: 8 a.m.–8 p.m.</li>
-                            <li>Samedi: 8 a.m.–5 p.m.</li>
-                            <li>Dimanche: Fermé</li>
+                            <li><span id="week">Lundi:</span> <span id="times">8 a.m.–6 p.m.</span></li>
+                            <li><span id="week">Mardi:</span> <span id="times">8 a.m.–6 p.m.</span></li>
+                            <li><span id="week-2">Mercredi:</span> <span id="times">8 a.m.–6 p.m.</span></li>
+                            <li><span id="week-3">Jeudi:</span> <span id="times">8 a.m.–8 p.m.</span></li>
+                            <li><span id="week-2">Vendredi:</span> <span id="times">8 a.m.–8 p.m.</span></li>
+                            <li><span id="week-4">Samedi:</span> <span id="times">8 a.m.–5 p.m.</span></li>
+                            <li><span id="week-5">Dimanche:</span> <span id="times"> FERMÉ </span></li>
                         </ul>
                     </div>
                 </div>
@@ -250,6 +251,8 @@
                 // options
             });
         </script>
+
+    <script src="js/nav.js"></script>
 
 </body>
 

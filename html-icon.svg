@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 288 288">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        stroke-width: 0px;
+      }
+
+      .cls-5 {
+        fill: #231f20;
+        font-size: 36px;
+        letter-spacing: .04em;
+      }
+
+      .cls-5, .cls-6 {
+        font-family: Helvetica-Bold, Helvetica;
+        font-weight: 700;
+      }
+
+      .cls-6 {
+        font-size: 56.61px;
+        letter-spacing: .04em;
+      }
+
+      .cls-6, .cls-4 {
+        fill: #fffef2;
+      }
+
+      .cls-3 {
+        fill: #333132;
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-2" x="75.05" y="75.05" width="137.89" height="137.89"/>
+    </clipPath>
+  </defs>
+  <g class="cls-1">
+    <rect class="cls-3" x="75.05" y="75.05" width="137.89" height="137.89" rx="30.47" ry="30.47"/>
+  </g>
+  <g>
+    <path class="cls-4" d="m131.43,138.97v-16.41h-14.37v16.41h-7.61v-36.76h7.61v14.02h14.37v-14.02h7.63v36.76h-7.63Z"/>
+    <path class="cls-4" d="m175.15,102.21v6.51h-11v30.25h-7.73v-30.25h-11.05v-6.51h29.78Z"/>
+    <path class="cls-4" d="m116.54,185.79h-7.16v-36.76h11.17l6.68,28.91,6.63-28.91h11.05v36.76h-7.16v-24.86c0-.71,0-1.72.02-3.01.02-1.29.02-2.28.02-2.98l-6.96,30.85h-7.46l-6.91-30.85c0,.7,0,1.69.02,2.98.02,1.29.03,2.29.03,3.01v24.86Z"/>
+    <path class="cls-4" d="m154.1,149.03h7.68v30.15h18.21v6.61h-25.89v-36.76Z"/>
+  </g>
+  <text class="cls-6" transform="translate(120.78 -59.18)"><tspan x="0" y="0">HT</tspan><tspan x="0" y="51.89">ML</tspan></text>
+  <text class="cls-5" transform="translate(43.78 -44.13)"><tspan x="0" y="0">HT</tspan><tspan x="0" y="33">ML</tspan></text>
+</svg>

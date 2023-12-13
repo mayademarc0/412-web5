@@ -5,15 +5,34 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Maya De Marco - Portfolio 2023</title>
+  <link rel="icon" type="image/x-icon" href="../web5/img/red-flower.svg">
   <link rel="stylesheet" href="css/portfolio.css" />
+  <link rel="stylesheet" href="https://use.typekit.net/faw1rcx.css">
+  <link rel="stylesheet" href="https://use.typekit.net/faw1rcx.css">
   <link rel="stylesheet" href="https://use.typekit.net/faw1rcx.css">
   <link rel="stylesheet" target=_blank
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  
 </head>
 
 <body>
   <div class="container">
   <a id="top"></a>
+  <!-- <div id="flower-spin">
+    <?xml version="1.0" encoding="UTF-8"?>
+    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 288 288">
+      <defs>
+        <style>
+          .cls-1 {
+            fill: #ef4341;
+            stroke-width: 0px;
+          }
+        </style>
+      </defs>
+      <path class="cls-1"
+        d="M226.81,143.96c14.79-13.02,18.87-35.07,8.63-52.8-10.23-17.72-31.37-25.22-50.04-18.92-3.88-19.32-20.94-33.88-41.41-33.88s-37.53,14.55-41.41,33.88c-18.67-6.3-39.81,1.2-50.04,18.92-10.23,17.72-6.16,39.78,8.64,52.8-14.79,13.02-18.87,35.07-8.64,52.8,10.23,17.72,31.37,25.22,50.04,18.92,3.88,19.32,20.94,33.88,41.41,33.88s37.53-14.55,41.41-33.88c18.67,6.3,39.81-1.2,50.04-18.92s6.16-39.77-8.63-52.8Z" />
+    </svg>  
+  </div> -->
   <header>
     <nav class="top-nav">
       <div class="logo">
@@ -35,8 +54,8 @@
   <main>
     <section class="landing">
       <!-- spans for word hidden anim + ANIM ON START -->
-      <h1>Let's Grow and</h1>
-      <h1>Flourish Together</h1>
+      <h1>Let's <span id="grow">Grow</span> and</h1>
+      <h1><span id="flour">Flourish</span> Together</h1>
       <section class="landing-flowers">
         <img id="red-flower" src="img/red-flower.svg" alt="logo" /></a>
         <img id="blue-flower" src="img/blue-flower.svg" alt="logo" /></a>
@@ -63,7 +82,7 @@
       </div>
       <div class="text-me">
         <h3>Hi there!</h3> 
-        <h2>I'm Maya De Marco</h2>
+        <h2>I'm <span id="maya">Maya</span> <span id="dem">De Marco</span></h2>
         <p>
           I am a Montreal based graphic and web designer who is always looking to learn, collaborate, and share with passionate individuals just like me.
           I aspire to help those I work with bring the love for their ideas to life.
@@ -180,13 +199,13 @@
   <footer class="bttm-footer">
     <section class="bttm-footer-text">
       <div>
-        <p>Ready to Grow?</p>
+        <p>Ready to <span id="grow-foot">Grow?</span></p>
         <p>Get in Touch!</p>
       </div>
       <div class="bttm-footer-contact">
         <div class="sm-links">
           <h3><a href="https://www.linkedin.com/in/maya-de-marco-1432a5235/?trk=public-profile-join-page/" target="_blank">Linkedin</a></h3>
-          <h3><a href="https://www.behance.net/mayad5" target="_blank">Behance</a></h3>
+          <h3><a href="https://www.behance.net/maya-de-marco" target="_blank">Behance</a></h3>
           <h3><a href="https://www.instagram.com/inadifferentwayy/?hl=en" target="_blank">Instagram</a></h3>
         </div>
         <h3 id="email">themayademarco@gmail.com</h3>
@@ -197,6 +216,15 @@
     <section id="copy">&copy; 2023 by Maya De Marco</section>
   </footer>
 </div>
-
+<script>
+  let flowerSpin = gsap.to("#flower-spin", {
+    duration: 2,
+    rotation: -360,
+    // svgOrigin: "131 126",
+    // repeat: -1,
+    ease: Linear.easeNone,
+  });
+</script>
+<script src="js/nav.js"></script>
 </body>
 </html>

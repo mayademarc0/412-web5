@@ -10,10 +10,13 @@ body {
   font-family: "roc-grotesk", sans-serif;
   font-weight: 400;
   font-style: normal;
+  cursor: url("../img/red-flower.svg"), pointer;
 }
 
 main {
   background-color: #fffff2;
+  z-index: 10;
+  position: relative;
 }
 
 img {
@@ -37,10 +40,101 @@ main img {
   padding: 0.5rem;
 }
 
+/* main img:hover {
+  transform: scale(1.15);
+} */
+
 header {
   position: sticky;
-  z-index: 10;
+  z-index: 20;
 }
+
+/*ANIM ON LOAD*/
+
+.container {
+  animation: slideInLeft 0.75s;
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* @keyframes slideInRight {
+  100% {
+    transform: translateX(0%);
+  }
+  0% {
+    transform: translateX(-100%);
+  }
+} */
+
+/*ENTER ANIM*/
+
+/* #flower-spin {
+  animation: flowerSpin 10s;
+} */
+
+/* @keyframes flowerSpin {
+  0% {
+    /* transform: translateX(-100%);
+    width: 300px;
+    height: 300px;
+    transform: rotate(100deg);
+    background: url("../img/red-flower.svg");
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    /* transform: translateX(0);
+    background: url("../img/red-flower.svg");
+  }
+} */
+
+/* #flower-spin {
+  width: 300px;
+  height: 300px;
+} */
+
+/* #flower-spin {
+  animation: 1s ease-out 0s 1;
+  background: url("../img/red-flower.svg");
+} */
+
+/* .container {
+  animation: transitionIn 0.75s;
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX (-10deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: rotateX (0);
+  }
+} */
+
+/* #flower-spin {
+  /* This section calls the transitionIn animation we defined above
+  animation: 1s ease-out 0s 1 transitionIn;
+  background: url("../img/red-flower.svg");
+  padding: 30px;
+} */
+
+/* #flower-spin {
+  /* width: 300px;
+  height: 300px;
+  background: url("../img/red-flower.svg");
+  animation: play 0.5s steps(6) infinite;
+  transform: rotateX (-10deg);
+} */
 
 /*NAVIGATION*/
 .top-nav {
@@ -52,6 +146,10 @@ header {
   padding: 1em 2em 2em 2em;
   border-bottom: solid;
   background-color: #fffff2;
+}
+
+.top-nav {
+  z-index: 30; /* Set a higher z-index for the navigation menu */
 }
 
 .logo {
@@ -119,26 +217,136 @@ header {
   text-align: center;
 }
 
-#red-flower {
+#grow:hover {
+  font-size: 1.3em;
+  cursor: url("../img/red-flower.svg"), pointer;
+  /* font-stretch: semi-condensed; */
+  display: inline-block;
+  -webkit-transform: scale(1, 1.3); /* Safari and Chrome */
+  font-family: "gopher", sans-serif;
+  font-weight: 700;
+}
+
+#flour:hover {
+  font-family: "yink", sans-serif;
+  /* font-weight: 400;
+  /* font-family: "gopher", sans-serif;
+  font-weight: 700; */
+  font-style: normal;
+  cursor: pointer;
+}
+
+/* #red-flower {
   width: 25%;
   position: absolute;
   top: 21.4em;
   left: 66.75em;
+} */
+
+#red-flower {
+  width: 50vh;
+  position: absolute;
+  top: 14.4em;
+  left: 63.75em;
 }
 
-#blue-flower {
+/* #blue-flower {
   width: 14%;
   position: absolute;
   top: 34.4em;
   left: 30.75em;
+} */
+
+#blue-flower {
+  width: 24vh;
+  position: absolute;
+  /* top: 34.4em; */
+  left: 30.75em;
 }
 
-#green-flower {
+/* #green-flower {
   width: 17%;
   position: absolute;
   top: 8.5em;
   left: 7.75em;
+} */
+
+#green-flower {
+  width: 33vh;
+  position: absolute;
+  top: 2.5em;
+  left: 4.75em;
 }
+
+#green-flower:hover {
+  transition: transform 0.3s ease;
+  /* transform: scale(1.15); */
+  transform: rotate(60deg);
+  cursor: pointer;
+}
+
+#red-flower:hover {
+  transition: transform 0.3s ease;
+  /* transform: scale(1.15); */
+  transform: rotate(60deg);
+  cursor: pointer;
+}
+
+#blue-flower:hover {
+  transition: transform 0.3s ease;
+  /* transform: scale(1.15); */
+  transform: rotate(60deg);
+  cursor: pointer;
+}
+
+/* I WANTED TO ANIMATE THE FLOWERS SPINNING ON SCROLL
+.reveal {
+  position: relative;
+  opacity: 0;
+}
+.reveal.active {
+  opacity: 1;
+}
+.active.fade-bottom {
+  animation: fade-bottom 1s ease-in;
+}
+.active.fade-left {
+  animation: fade-left 1s ease-in;
+}
+.active.fade-right {
+  animation: fade-right 1s ease-in;
+}
+
+@keyframes fade-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+} */
 
 .landing {
   width: 100%;
@@ -256,6 +464,28 @@ header {
   border-radius: 0.5rem;
 }
 
+#maya:hover {
+  /* font-family: "yink", sans-serif;
+  /* font-weight: 400; */
+  font-family: "gopher", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  cursor: pointer;
+  color: #ef4341;
+}
+
+.pic-me img:hover {
+  background-color: #d7df23;
+  /* background-color: #2460ad; */
+}
+
+#dem:hover {
+  color: #2460ad;
+  font-family: "gopher", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
 /*SKILLS*/
 
 .skills h1 {
@@ -287,9 +517,34 @@ header {
   gap: 4em;
 }
 
-.skills-icons:hover img {
+/* .skills-icons:hover img {
   transform: scale(20px);
   transition: transform 0.25s;
+} */
+
+.icon-1:hover {
+  transition: transform 0.3s ease;
+  transform: scale(1.15);
+}
+
+.icon-2:hover {
+  transition: transform 0.3s ease;
+  transform: scale(1.15);
+}
+
+.icon-3:hover {
+  transition: transform 0.3s ease;
+  transform: scale(1.15);
+}
+
+.icon-4:hover {
+  transition: transform 0.3s ease;
+  transform: scale(1.15);
+}
+
+.icon-5:hover {
+  transition: transform 0.3s ease;
+  transform: scale(1.15);
 }
 
 /*WORKS*/
@@ -547,9 +802,28 @@ header {
   font-size: 0.8em;
 }
 
+.sm-links a:hover {
+  text-decoration: none;
+  color: #fff;
+  border-bottom: 3px solid;
+  padding-bottom: 5px;
+  font-size: 0.8em;
+  font-weight: 500;
+}
+
 .bttm-footer-text p {
   font-size: 5em;
   line-height: 1.5em;
+}
+
+#grow-foot:hover {
+  font-size: 1.3em;
+  cursor: pointer;
+  /* font-stretch: semi-condensed; */
+  display: inline-block;
+  -webkit-transform: scale(1, 1.3); /* Safari and Chrome */
+  font-family: "gopher", sans-serif;
+  font-weight: 400;
 }
 
 /*WORKS PAGES*/
@@ -565,6 +839,7 @@ header {
   font-size: 7em;
   text-align: center;
   padding: 1em 1.5em 0.2em 1.5em;
+  line-height: 1em;
 }
 
 #psa-h1-works {
@@ -589,7 +864,7 @@ header {
   width: 100%;
   /* height: 780px; */
   object-fit: cover;
-  padding: 1em 2em 2em 2em;
+  padding: 3em 2em 2em 2em;
   /* transform: translateY(150px); */
 }
 
@@ -741,25 +1016,67 @@ input[type="checkbox"] {
     z-index: 10;
   }
 
-  #green-flower {
+  /* #green-flower {
     width: 24%;
     position: absolute;
     top: 9.5em;
     left: 1.75em;
+  } */
+
+  /* #green-flower {
+    width: 24%;
+    position: absolute;
+    top: 4.5em;
+    left: 0.75em;
+  } */
+
+  #green-flower {
+    width: 21vh;
+    position: absolute;
+    top: 2.5em;
+    left: -0.25em;
   }
 
-  #blue-flower {
+  /* #blue-flower {
     width: 23%;
     position: absolute;
     top: 31.4em;
     left: 11.75em;
+  } */
+
+  /* #blue-flower {
+    width: 23%;
+    position: absolute;
+    top: 25.4em;
+    left: 11.75em;
+  } */
+
+  #blue-flower {
+    width: 17vh;
+    position: absolute;
+    top: 25.4em;
+    left: 11.75em;
   }
 
-  #red-flower {
+  /* #red-flower {
     width: 32%;
     position: absolute;
     top: 17.4em;
     left: 35.75em;
+  } */
+
+  /* #red-flower {
+    width: 32%;
+    position: absolute;
+    top: 12.4em;
+    left: 35.75em;
+  } */
+
+  #red-flower {
+    width: 26vh;
+    position: absolute;
+    top: 12.4em;
+    left: 31.75em;
   }
 
   /*ABT*/
@@ -922,25 +1239,46 @@ input[type="checkbox"] {
 
   /*LANDING*/
 
-  #green-flower {
+  /* #green-flower {
     width: 42%;
     position: absolute;
     top: 8.5em;
     left: -0.25em;
+  } */
+
+  #green-flower {
+    width: 18vh;
+    position: absolute;
+    top: 1.5em;
+    left: 1.75em;
   }
 
-  #blue-flower {
+  /* #blue-flower {
     width: 33%;
     position: absolute;
     top: 30.4em;
     left: 3.75em;
+  } */
+
+  #blue-flower {
+    width: 16vh;
+    position: absolute;
+    top: 24.4em;
+    left: 2.75em;
   }
 
-  #red-flower {
+  /* #red-flower {
     width: 56%;
     position: absolute;
     top: 19.4em;
     left: 11.75em;
+  } */
+
+  #red-flower {
+    width: 26vh;
+    position: absolute;
+    top: 12.4em;
+    left: 10.75em;
   }
 
   .landing {
@@ -1025,13 +1363,18 @@ input[type="checkbox"] {
   /*SKILLS*/
   .skills-icons {
     display: grid;
-    grid-template-columns: 1fr;
-    padding: 0em 7em 0em 6em;
-    gap: 1em;
+    grid-template-columns: 1fr 1fr;
+    padding: 0em 4em 0em 4em;
+    gap: 0.5em;
   }
 
   .skills {
     padding-left: 0.5em;
+  }
+
+  .skills {
+    padding-top: 3em;
+    padding-bottom: 0.5em;
   }
 
   .skills h1 {
@@ -1144,10 +1487,20 @@ input[type="checkbox"] {
     font-style: normal;
     font-family: "roc-grotesk", sans-serif;
     font-weight: 700;
-    font-size: 2.5em;
+    font-size: 3em;
     text-align: center;
     padding: 1em 1em 0.2em 1em;
   }
+
+  /* .work-page-tit h1 {
+    font-style: normal;
+    font-family: "roc-grotesk", sans-serif;
+    font-weight: 700;
+    font-size: 3.5em;
+    text-align: center;
+    padding: 1em 1em 0.2em 1em;
+    line-height: 0.95em;
+  } */
 
   .work-page-tit h1 {
     font-style: normal;
@@ -1156,6 +1509,7 @@ input[type="checkbox"] {
     font-size: 3.5em;
     text-align: center;
     padding: 1em 1em 0.2em 1em;
+    line-height: 0.95em;
   }
 
   .work-page-tit h2 {
@@ -1180,13 +1534,13 @@ input[type="checkbox"] {
     padding-left: 1.7999999999999998em;
   }
 
-  .text-post-img p {
+  /* .text-post-img p {
     padding-bottom: 32px;
     font-size: 0.8em;
     padding: 1.5em;
     padding-left: 2.5em;
     padding-bottom: 4em;
-  }
+  } */
 
   .mult-img-post-text {
     display: grid;
@@ -1196,6 +1550,7 @@ input[type="checkbox"] {
     object-fit: cover;
     padding: 0em 2em 0em 2em;
   }
+
   .mult-img-post-text-2 {
     display: grid;
     grid-template-columns: 1fr;
@@ -1214,5 +1569,30 @@ input[type="checkbox"] {
     grid-template-columns: 1fr 1fr 1fr;
     width: 15em;
     padding: 2em 0 0;
+  }
+
+  .mult-img1,
+  .mult-img2,
+  .mult-img3 {
+    width: 100%;
+    /* height: 500px; */
+    object-fit: cover;
+    padding-bottom: 2.5em;
+  }
+
+  .text-post-img {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 2em 2em 1em;
+    column-gap: 5em;
+  }
+
+  .text-post-img p {
+    padding-bottom: 32px px;
+    font-size: 0.8em;
+    padding: 1.5em;
+    padding-left: 2.3em;
+    padding-bottom: 4em;
+    padding-right: 2em;
   }
 }
