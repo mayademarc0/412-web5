@@ -10,7 +10,7 @@ body {
   font-family: "roc-grotesk", sans-serif;
   font-weight: 400;
   font-style: normal;
-  cursor: url("../img/red-flower.svg"), pointer;
+  cursor: url("../img/red-flower.svg");
 }
 
 main {
@@ -49,7 +49,7 @@ header {
   z-index: 20;
 }
 
-/*ANIM ON LOAD*/
+/*ANIM ON LOAD - CONTAINER SLIDE IN*/
 
 .container {
   animation: slideInLeft 0.75s;
@@ -64,6 +64,39 @@ header {
   }
 }
 
+/*ANIM ONCE LOADED - ROTATING FLOWERS*/
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*  TRYING TO FIGURE OUT ANIMATION BEFORE PAGE LOADS - TRANSLATION REVEAL??!! */
+
+/*#flower-spin {
+  background-image: url("../img/red-flower.svg");
+  animation-name: rotate;
+  animation-duration: 1s;
+  animation-delay: 2s;
+  width: 300px;
+  height: 300px;
+  z-index: 100;
+  margin: 0 auto;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+*/
+
 /* @keyframes slideInRight {
   100% {
     transform: translateX(0%);
@@ -73,7 +106,7 @@ header {
   }
 } */
 
-/*ENTER ANIM*/
+/*ENTER ANIM*/ /* REVEAL TRANSLATION */
 
 /* #flower-spin {
   animation: flowerSpin 10s;
@@ -248,6 +281,9 @@ header {
   position: absolute;
   top: 14.4em;
   left: 63.75em;
+  animation-name: rotate;
+  animation-duration: 1.5s;
+  animation-delay: 1.5s;
 }
 
 /* #blue-flower {
@@ -262,6 +298,9 @@ header {
   position: absolute;
   /* top: 34.4em; */
   left: 30.75em;
+  animation-name: rotate;
+  animation-duration: 1.5s;
+  animation-delay: 1s;
 }
 
 /* #green-flower {
@@ -276,6 +315,9 @@ header {
   position: absolute;
   top: 2.5em;
   left: 4.75em;
+  animation-name: rotate;
+  animation-duration: 1.5s;
+  animation-delay: 0.5s;
 }
 
 #green-flower:hover {
@@ -477,6 +519,7 @@ header {
 .pic-me img:hover {
   background-color: #d7df23;
   /* background-color: #2460ad; */
+  /* animation: color-change 1s infinite; */
 }
 
 #dem:hover {
@@ -484,6 +527,56 @@ header {
   font-family: "gopher", sans-serif;
   font-weight: 700;
   font-style: normal;
+  cursor: pointer;
+}
+
+#look:hover {
+  font-family: "gopher", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  cursor: pointer;
+  font-size: 1.4em;
+}
+
+#oo:hover {
+  font-family: "gopher", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  cursor: pointer;
+  font-size: 3em;
+}
+
+#life:hover {
+  font-family: "yink", sans-serif;
+  /* font-weight: 400;
+  /* font-family: "gopher", sans-serif;
+  font-weight: 700; */
+  font-style: normal;
+  cursor: pointer;
+  font-size: 1.3em;
+}
+
+#pop:hover {
+  font-family: "gopher", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  cursor: pointer;
+  font-size: 1.4em;
+  animation: color-change 1s infinite;
+}
+
+@keyframes color-change {
+  0% {
+    color: #ef4341;
+  }
+
+  50% {
+    color: #d7df23;
+  }
+
+  100% {
+    color: #2460ad;
+  }
 }
 
 /*SKILLS*/
@@ -525,26 +618,31 @@ header {
 .icon-1:hover {
   transition: transform 0.3s ease;
   transform: scale(1.15);
+  cursor: pointer;
 }
 
 .icon-2:hover {
   transition: transform 0.3s ease;
   transform: scale(1.15);
+  cursor: pointer;
 }
 
 .icon-3:hover {
   transition: transform 0.3s ease;
   transform: scale(1.15);
+  cursor: pointer;
 }
 
 .icon-4:hover {
   transition: transform 0.3s ease;
   transform: scale(1.15);
+  cursor: pointer;
 }
 
 .icon-5:hover {
   transition: transform 0.3s ease;
   transform: scale(1.15);
+  cursor: pointer;
 }
 
 /*WORKS*/
@@ -1263,8 +1361,8 @@ input[type="checkbox"] {
   #blue-flower {
     width: 16vh;
     position: absolute;
-    top: 24.4em;
-    left: 2.75em;
+    top: 21.4em;
+    left: 1.75em;
   }
 
   /* #red-flower {
@@ -1274,10 +1372,17 @@ input[type="checkbox"] {
     left: 11.75em;
   } */
 
-  #red-flower {
+  /* #red-flower {
     width: 26vh;
     position: absolute;
     top: 12.4em;
+    left: 10.75em;
+  } */
+
+  #red-flower {
+    width: 27vh;
+    position: absolute;
+    top: 11.4em;
     left: 10.75em;
   }
 
